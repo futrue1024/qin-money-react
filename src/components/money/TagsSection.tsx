@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import React, {useState} from "react";
+import React from "react";
+import {useTags} from "useTags";
 
 const Wrapper = styled.section`
   background: #ffffff;
@@ -33,9 +34,13 @@ const Wrapper = styled.section`
     padding: 2px 4px;
   }
 `;
-const TagsSection: React.FC = () => {
-  const [tags, setTags] = useState<string[]>(["衣", "食", "住", "行"]);
-  const [selectTag, setSelectTag] = useState<string[]>([]);
+type Props = {
+  value: string[]
+  onChange: (selected: string[]) => void
+}
+const TagsSection: React.FC<Props> = (props) => {
+  const {tags, setTags} = useTags();
+  const selectTag = props.value;
   const addTag = () => {
     const tagName = window.prompt("请输入标签名");
     if (tagName === null) {
@@ -51,10 +56,10 @@ const TagsSection: React.FC = () => {
   const onSelectTag = (tag: string) => {
     const index = selectTag.indexOf(tag);
     if (index >= 0) {
-      setSelectTag(selectTag.filter(t => t !== tag));
+      props.onChange(selectTag.filter(t => t !== tag));
       //如果已经在数组内，再次点击从数组filter。
-    }else {
-      setSelectTag([...selectTag,tag])
+    } else {
+      props.onChange([...selectTag, tag]);
     }
   };
   return (
@@ -62,7 +67,7 @@ const TagsSection: React.FC = () => {
       <ul>
         {tags.map(tag =>
           <li key={tag} onClick={() => {onSelectTag(tag);}}
-          className={selectTag.indexOf(tag) >= 0 ? 'selected':''}>
+              className={selectTag.indexOf(tag) >= 0 ? "selected" : ""}>
             {tag}
           </li>)}
       </ul>
