@@ -28,14 +28,25 @@ body {
   font-family: $font-hei;
   font-size: 16px;
   line-height: 1.2;
-
+  color: #333;
 }
-
+:focus{
+  outline: none;
+}
+button {
+  font-family: inherit;
+}
+.clearfix{
+  content: '';
+  display: block;
+  clear: both;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
   monospace;
 }
-.icon{
+
+.icon {
   width: 1em;
   height: 1em;
 }

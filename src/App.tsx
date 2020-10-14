@@ -10,9 +10,6 @@ import Money from "./views/Money";
 import Statistics from "./views/Statistics";
 import NoMatch from "./views/NoMatch";
 
-
-
-
 function App() {
   return (
     <Router>
