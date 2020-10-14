@@ -35,40 +35,42 @@ const Wrapper = styled.section`
   }
 `;
 type Props = {
-  value: string[]
-  onChange: (selected: string[]) => void
+  value: number[]
+  onChange: (selected: number[]) => void
 }
 const TagsSection: React.FC<Props> = (props) => {
   const {tags, setTags} = useTags();
-  const selectTag = props.value;
+  const selectTagIds = props.value;
   const addTag = () => {
     const tagName = window.prompt("请输入标签名");
     if (tagName === null) {
       alert("未输入标签名，标签名不能为空");
     } else {
-      if (tags.indexOf(tagName) < 0) {
-        setTags([...tags, tagName]);
-      } else {
-        alert("标签名已存在");
+      for (let i = 0; i < tags.length; i++){
+        if (tags[i].name === tagName) {
+          alert("标签名已存在");
+        } else {
+          setTags([...tags, {id: Math.random(), name: tagName}]);
+        }
       }
     }
   };
-  const onSelectTag = (tag: string) => {
-    const index = selectTag.indexOf(tag);
+  const onSelectTag = (tagIds: number) => {
+    const index = selectTagIds.indexOf(tagIds);
     if (index >= 0) {
-      props.onChange(selectTag.filter(t => t !== tag));
+      props.onChange(selectTagIds.filter(t => t !== tagIds));
       //如果已经在数组内，再次点击从数组filter。
     } else {
-      props.onChange([...selectTag, tag]);
+      props.onChange([...selectTagIds, tagIds]);
     }
   };
   return (
     <Wrapper>
       <ul>
         {tags.map(tag =>
-          <li key={tag} onClick={() => {onSelectTag(tag);}}
-              className={selectTag.indexOf(tag) >= 0 ? "selected" : ""}>
-            {tag}
+          <li key={tag.id} onClick={() => {onSelectTag(tag.id);}}
+              className={selectTagIds.indexOf(tag.id) >= 0 ? "selected" : ""}>
+            {tag.name}
           </li>)}
       </ul>
       <button onClick={addTag}>新增表签</button>

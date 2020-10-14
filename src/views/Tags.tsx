@@ -40,9 +40,9 @@ const Tags = () => {
     <Layout>
       <TagsList>
         {tags.map(tag =>
-          <li key={tag}>
+          <li key={tag.id}>
           <Link to={'/tags/'+tag}>
-              <span>{tag}</span>
+              <span>{tag.name}</span>
               <Icon name='right'/>
           </Link>
           </li>
