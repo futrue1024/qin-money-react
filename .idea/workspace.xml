@@ -11,15 +11,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="986f50aa-c9ac-4f62-839e-8147ad5bfb7f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/money/TagsSection.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/标签 2.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/money/NotesSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/money/NumberPadSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/money/NumberPadSection/Wrapper.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/money/NumberPadSection/computesOutput.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/money/categorySection.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icons/money.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/money.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Money.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Money.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +65,7 @@
       <updated>1602567464472</updated>
       <workItem from="1602567465555" duration="719000" />
       <workItem from="1602577914456" duration="1975000" />
-      <workItem from="1602580151800" duration="19787000" />
+      <workItem from="1602580151800" duration="26599000" />
     </task>
     <task id="LOCAL-00001" summary="update index.html">
       <created>1602577932808</created>
@@ -98,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602592339299</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="完成tags组件基本功能">
+      <created>1602644523069</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1602644523069</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,25 +125,26 @@
     <MESSAGE value="固定底部导航" />
     <MESSAGE value="创建Icon组件" />
     <MESSAGE value="抽离views" />
-    <option name="LAST_COMMIT_MESSAGE" value="抽离views" />
+    <MESSAGE value="完成tags组件基本功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成tags组件基本功能" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1614" y="657" key="#Inspections" timestamp="1602578338986">
       <screen x="1440" y="23" width="1080" height="1897" />
     </state>
     <state x="1614" y="657" key="#Inspections/0.23.1440.816/1440.23.1080.1897@1440.23.1080.1897" timestamp="1602578338986" />
-    <state x="1739" y="765" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602567762981">
+    <state x="1739" y="765" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1602653605622">
       <screen x="1440" y="0" width="1080" height="1920" />
     </state>
-    <state x="1739" y="765" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/1440.0.1080.1920@1440.0.1080.1920" timestamp="1602567762981" />
+    <state x="1739" y="765" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900/1440.0.1080.1920@1440.0.1080.1920" timestamp="1602653605622" />
     <state x="1718" y="714" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602580735502">
       <screen x="1440" y="0" width="1080" height="1920" />
     </state>
     <state x="1718" y="714" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/1440.0.1080.1920@1440.0.1080.1920" timestamp="1602580735502" />
-    <state x="1587" y="487" key="CommitChangelistDialog2" timestamp="1602592339187">
+    <state x="1587" y="487" key="CommitChangelistDialog2" timestamp="1602644522926">
       <screen x="1440" y="0" width="1080" height="1920" />
     </state>
-    <state x="1587" y="487" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1080.1920@1440.0.1080.1920" timestamp="1602592339187" />
+    <state x="1587" y="487" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1080.1920@1440.0.1080.1920" timestamp="1602644522926" />
     <state x="1587" y="504" key="CommitChangelistDialog2/0.23.1440.816/1440.23.1080.1897@1440.23.1080.1897" timestamp="1602577932697" />
     <state x="1644" y="766" key="EditFileWatcherDialog" timestamp="1602579283352">
       <screen x="1440" y="23" width="1080" height="1897" />
