@@ -4,6 +4,7 @@ import {useTags} from "useTags";
 import styled from "styled-components";
 import Icon from "../components/Icon";
 import {Link} from "react-router-dom";
+import {Button} from "../components/Button";
 
 const TagsList = styled.ol`
   font-size: 16px;
@@ -16,17 +17,15 @@ const TagsList = styled.ol`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    >span{
+      display: flex;
+      align-items: center;
+    }
     }
     
   }
 `;
-const Button = styled.button`
-  border: none;
-  padding:8px 12px;
-  color: white;
-  border-radius: 4px;
-  background: #1DA161;
-`;
+
 const Center = styled.div`
 margin-top:60px;
 display: flex;
@@ -41,9 +40,9 @@ const Tags = () => {
       <TagsList>
         {tags.map(tag =>
           <li key={tag.id}>
-          <Link to={'/tags/'+tag}>
+          <Link to={'/tags/'+tag.id}>
               <span>{tag.name}</span>
-              <Icon name='right'/>
+              <span>编辑<Icon name='right'/></span>
           </Link>
           </li>
           )}

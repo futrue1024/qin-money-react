@@ -6,10 +6,12 @@ const Wrapper = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column;
+  
 `;
 const Main = styled.div`
   flex-grow: 1;
   overflow: auto;
+  background: #f5f5f5;
 `;
 
 const Layout = (props:any) => {

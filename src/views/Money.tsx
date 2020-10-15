@@ -9,6 +9,7 @@ import {NumberPadSection} from "../components/money/NumberPadSection";
 
 type Category = "-" | "+"
 const MyLayout = styled(Layout)`
+//给通用组件传入指定的className及样式
  display: flex;
  flex-direction: column;
 `;

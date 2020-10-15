@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import React from "react";
 import {useTags} from "useTags";
+import {createId} from "../../ilb/createId";
 
 const Wrapper = styled.section`
   background: #ffffff;
@@ -50,7 +51,7 @@ const TagsSection: React.FC<Props> = (props) => {
         if (tags[i].name === tagName) {
           alert("标签名已存在");
         } else {
-          setTags([...tags, {id: Math.random(), name: tagName}]);
+          setTags([...tags, {id: createId(), name: tagName}]);
         }
       }
     }
