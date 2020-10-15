@@ -11,20 +11,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="986f50aa-c9ac-4f62-839e-8147ad5bfb7f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Input.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ilb/createId.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/useUpdate.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Icon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Icon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/money/NotesSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/money/NotesSection.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/money/TagsSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/money/TagsSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ilb/createId.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ilb/createId.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/useTags.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/useTags.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Money.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Money.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Tag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Tag.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Tags.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Tags.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +68,7 @@
       <updated>1602567464472</updated>
       <workItem from="1602567465555" duration="719000" />
       <workItem from="1602577914456" duration="1975000" />
-      <workItem from="1602580151800" duration="49516000" />
+      <workItem from="1602580151800" duration="55449000" />
     </task>
     <task id="LOCAL-00001" summary="update index.html">
       <created>1602577932808</created>
@@ -137,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602674899067</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="增加编辑页增删改查">
+      <created>1602732448892</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1602732448892</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +168,8 @@
     <MESSAGE value="抽离useTags自定义hook" />
     <MESSAGE value="创建 /tags/:tag路由 设置exact精准路径" />
     <MESSAGE value="将tag:string 重构 为 tag:number" />
-    <option name="LAST_COMMIT_MESSAGE" value="将tag:string 重构 为 tag:number" />
+    <MESSAGE value="增加编辑页增删改查" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加编辑页增删改查" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1614" y="657" key="#Inspections" timestamp="1602578338986">
@@ -180,10 +184,10 @@
       <screen x="1440" y="0" width="1080" height="1920" />
     </state>
     <state x="1718" y="714" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/1440.0.1080.1920@1440.0.1080.1920" timestamp="1602580735502" />
-    <state x="1587" y="487" key="CommitChangelistDialog2" timestamp="1602674898959">
+    <state x="1587" y="487" key="CommitChangelistDialog2" timestamp="1602732448718">
       <screen x="1440" y="0" width="1080" height="1920" />
     </state>
-    <state x="1587" y="487" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1080.1920@1440.0.1080.1920" timestamp="1602674898959" />
+    <state x="1587" y="487" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1080.1920@1440.0.1080.1920" timestamp="1602732448718" />
     <state x="1587" y="504" key="CommitChangelistDialog2/0.23.1440.816/1440.23.1080.1897@1440.23.1080.1897" timestamp="1602577932697" />
     <state x="1644" y="766" key="EditFileWatcherDialog" timestamp="1602579283352">
       <screen x="1440" y="23" width="1080" height="1897" />
@@ -193,6 +197,10 @@
       <screen x="1440" y="0" width="1080" height="1920" />
     </state>
     <state x="1489" y="599" key="SettingsEditor/0.0.1440.900/1440.0.1080.1920@1440.0.1080.1920" timestamp="1602580565577" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1602740105569">
+      <screen x="1440" y="0" width="1080" height="1920" />
+    </state>
+    <state width="500" height="445" key="SwitcherDM/0.0.1440.900/1440.0.1080.1920@1440.0.1080.1920" timestamp="1602740105568" />
     <state x="1764" y="739" key="refactoring.ChangeSignatureDialog" timestamp="1602661035485">
       <screen x="1440" y="0" width="1080" height="1920" />
     </state>
@@ -201,17 +209,5 @@
       <screen x="1440" y="0" width="1080" height="1920" />
     </state>
     <state x="1645" y="451" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/1440.0.1080.1920@1440.0.1080.1920" timestamp="1602593374467" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/components/money/TagsSection.tsx</url>
-          <line>41</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

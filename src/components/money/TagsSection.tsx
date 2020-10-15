@@ -40,22 +40,9 @@ type Props = {
   onChange: (selected: number[]) => void
 }
 const TagsSection: React.FC<Props> = (props) => {
-  const {tags, setTags} = useTags();
+  const {tags, setTags,addTag} = useTags();
   const selectTagIds = props.value;
-  const addTag = () => {
-    const tagName = window.prompt("请输入标签名");
-    if (tagName === null) {
-      alert("未输入标签名，标签名不能为空");
-    } else {
-      for (let i = 0; i < tags.length; i++){
-        if (tags[i].name === tagName) {
-          alert("标签名已存在");
-        } else {
-          setTags([...tags, {id: createId(), name: tagName}]);
-        }
-      }
-    }
-  };
+
   const onSelectTag = (tagIds: number) => {
     const index = selectTagIds.indexOf(tagIds);
     if (index >= 0) {

@@ -34,7 +34,7 @@ align-items: center;
 
 `
 const Tags = () => {
-  const {tags, setTags} = useTags();
+  const {tags,addTag} = useTags();
   return (
     <Layout>
       <TagsList>
@@ -48,7 +48,7 @@ const Tags = () => {
           )}
       </TagsList>
       <Center>
-        <Button>新增标签</Button>
+        <Button onClick={addTag}>新增标签</Button>
       </Center>
     </Layout>
   );

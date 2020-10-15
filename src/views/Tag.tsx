@@ -1,6 +1,6 @@
 import React from "react";
 import {useTags} from "../useTags";
-import {useParams} from "react-router-dom";
+import {useParams,useHistory} from "react-router-dom";
 import Layout from "components/Layout";
 import Icon from "components/Icon";
 import {Button} from "components/Button";
@@ -17,6 +17,10 @@ const Topbar = styled.header`
   line-height: 20px;
   padding: 14px;
   background: white;
+  > .topRight{
+  width: 16px;
+  height: 16px;
+  }
   //box-shadow: 0 0 3px rgba(0,0,0,0.3);
 
 `
@@ -34,12 +38,16 @@ const Tag: React.FC = () => {
   const {findTag,updateTag,deleteTag} = useTags();
   let {id:idString} = useParams<Params>();
   const tag = findTag(parseInt(idString));
+  const history = useHistory()
+  const onBack = () => {
+    history.goBack()
+  }
   return (
     <Layout>
       <Topbar>
-        <Icon name="left"/>
+        <Icon name="left" onClick={onBack}/>
         <span>编辑标签</span>
-        <Icon name="right"/>
+        <span className='topRight'/>
       </Topbar>
       {tag?<div>
         <LabelWrapper>
