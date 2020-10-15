@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import React from "react";
-import {useTags} from "useTags";
+import {useTags} from "hooks/useTags";
 import {createId} from "../../ilb/createId";
 
 const Wrapper = styled.section`
@@ -40,7 +40,7 @@ type Props = {
   onChange: (selected: number[]) => void
 }
 const TagsSection: React.FC<Props> = (props) => {
-  const {tags, setTags,addTag} = useTags();
+  const {tags,addTag} = useTags();
   const selectTagIds = props.value;
 
   const onSelectTag = (tagIds: number) => {

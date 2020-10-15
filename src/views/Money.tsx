@@ -5,6 +5,7 @@ import {TagsSection} from "components/money/TagsSection";
 import {NotesSection} from "components/money/NotesSection";
 import {CategorySection} from "components/money/categorySection";
 import {NumberPadSection} from "../components/money/NumberPadSection";
+import {useRecords} from "../icons/useRecords";
 
 
 type Category = "-" | "+"
@@ -13,25 +14,39 @@ const MyLayout = styled(Layout)`
  display: flex;
  flex-direction: column;
 `;
+const defaultFromData = {
+
+  tagIds: [] as number[],
+  note: "",
+  category: "-" as Category,
+  amount: 0
+
+};
 const Money = () => {
-  const [selected, setSelected] = useState({
-    tagIds: [] as number[],
-    note: "",
-    category: "-" as Category,
-    amount: 0
-  });
-const onChange = (obj:Partial<typeof selected>) => {
-  setSelected({
-    ...selected,
-    ...obj
-  });
-}
+  const {records, addRecord} = useRecords();
+  const [selected, setSelected] = useState(defaultFromData);
+  console.log(selected);
+  const onChange = (obj: Partial<typeof selected>) => {
+    setSelected({
+      ...selected,
+      ...obj
+    });
+  };
+  const submit = () => {
+    if (addRecord(selected)) {
+      alert("保存成功");
+    }
+    setSelected(defaultFromData);
+    window.history.go(0);
+  };
   return (
     <MyLayout>
+      {JSON.stringify(records)}
       <TagsSection value={selected.tagIds} onChange={tagIds => onChange({tagIds})}/>
       <NotesSection value={selected.note} onChange={note => onChange({note})}/>
       <CategorySection value={selected.category} onChange={category => onChange({category})}/>
-      <NumberPadSection value={selected.amount} onChange={amount => onChange({amount})}/>
+      <NumberPadSection value={selected.amount} onChange={amount => onChange({amount})}
+                        onOk={submit}/>
     </MyLayout>);
 };
 

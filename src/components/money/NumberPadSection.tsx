@@ -11,6 +11,7 @@ type Props = {
 
 const NumberPadSection: React.FC<Props> = (props) => {
   const [output,_setOutput] = useState(props.value.toString())
+
   const setOutput = (output: string) => {
     let newOutput:string;
     if (output.length > 16) {
@@ -22,7 +23,6 @@ const NumberPadSection: React.FC<Props> = (props) => {
      _setOutput(newOutput)
     }
     props.onChange(parseFloat(newOutput));
-    console.log(parseFloat(newOutput))
   };
   const onClickButton = (e: React.MouseEvent) => {
     const text = (e.target as HTMLButtonElement).textContent;

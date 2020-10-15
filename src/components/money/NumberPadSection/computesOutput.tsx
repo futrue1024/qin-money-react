@@ -20,12 +20,12 @@ const generateOutput = (text: string, output = "0") => {
       return output + ".";
     case "删除":
       if (output.length === 1) {
-        return "";
+        return "0";
       } else {
         return output.slice(0, -1) || "";
       }
     case "清空":
-      return "";
+      return "0";
     default:
       return "";
   }

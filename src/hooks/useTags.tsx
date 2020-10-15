@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {createId} from "./ilb/createId";
+import {createId} from "../ilb/createId";
 import {useUpdate} from "./useUpdate";
 
 const useTags = () => {
