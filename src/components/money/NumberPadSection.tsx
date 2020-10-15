@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Wrapper from "./NumberPadSection/Wrapper";
 import {generateOutput} from "./NumberPadSection/computesOutput";
-import {ok} from "assert";
+
 
 type Props = {
   value: number,

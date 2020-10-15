@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -12,13 +15,13 @@
   <component name="ChangeListManager">
     <list default="true" id="986f50aa-c9ac-4f62-839e-8147ad5bfb7f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/money/categorySection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/money/TypeSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/money/NumberPadSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/money/NumberPadSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/money/TagsSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/money/TagsSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useRecords.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useRecords.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hooks/useTags.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useTags.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icons/useRecords.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useRecords.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useUpdate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useUpdate.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Money.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Money.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Statistics.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Statistics.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +73,7 @@
       <workItem from="1602567465555" duration="719000" />
       <workItem from="1602577914456" duration="1975000" />
       <workItem from="1602580151800" duration="61592000" />
-      <workItem from="1602759064827" duration="1680000" />
+      <workItem from="1602759064827" duration="4969000" />
     </task>
     <task id="LOCAL-00001" summary="update index.html">
       <created>1602577932808</created>
@@ -156,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602755317296</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="统计基本样式，引入dayjs">
+      <created>1602761265270</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1602761265270</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,7 +198,8 @@
     <MESSAGE value="增加编辑页增删改查" />
     <MESSAGE value="Tags数据存入本地" />
     <MESSAGE value="记账页面完成数据存入本地" />
-    <option name="LAST_COMMIT_MESSAGE" value="记账页面完成数据存入本地" />
+    <MESSAGE value="统计基本样式，引入dayjs" />
+    <option name="LAST_COMMIT_MESSAGE" value="统计基本样式，引入dayjs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1614" y="657" key="#Inspections" timestamp="1602578338986">
@@ -203,10 +214,10 @@
       <screen x="1440" y="0" width="1080" height="1920" />
     </state>
     <state x="1718" y="714" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/1440.0.1080.1920@1440.0.1080.1920" timestamp="1602580735502" />
-    <state x="1587" y="487" key="CommitChangelistDialog2" timestamp="1602755317137">
+    <state x="1587" y="487" key="CommitChangelistDialog2" timestamp="1602761265049">
       <screen x="1440" y="0" width="1080" height="1920" />
     </state>
-    <state x="1587" y="487" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1080.1920@1440.0.1080.1920" timestamp="1602755317137" />
+    <state x="1587" y="487" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1080.1920@1440.0.1080.1920" timestamp="1602761265049" />
     <state x="1587" y="504" key="CommitChangelistDialog2/0.23.1440.816/1440.23.1080.1897@1440.23.1080.1897" timestamp="1602577932697" />
     <state x="1644" y="766" key="EditFileWatcherDialog" timestamp="1602579283352">
       <screen x="1440" y="23" width="1080" height="1897" />
@@ -220,13 +231,17 @@
       <screen x="1440" y="0" width="1080" height="1920" />
     </state>
     <state width="500" height="445" key="SwitcherDM/0.0.1440.900/1440.0.1080.1920@1440.0.1080.1920" timestamp="1602740105568" />
+    <state x="1688" y="649" width="584" height="554" key="find.popup" timestamp="1602765397740">
+      <screen x="1440" y="0" width="1080" height="1920" />
+    </state>
+    <state x="1688" y="649" width="584" height="554" key="find.popup/0.0.1440.900/1440.0.1080.1920@1440.0.1080.1920" timestamp="1602765397740" />
     <state x="1764" y="739" key="refactoring.ChangeSignatureDialog" timestamp="1602661035485">
       <screen x="1440" y="0" width="1080" height="1920" />
     </state>
     <state x="1764" y="739" key="refactoring.ChangeSignatureDialog/0.0.1440.900/1440.0.1080.1920@1440.0.1080.1920" timestamp="1602661035485" />
-    <state x="1645" y="451" width="670" height="676" key="search.everywhere.popup" timestamp="1602593374467">
+    <state x="1645" y="451" width="670" height="676" key="search.everywhere.popup" timestamp="1602765314623">
       <screen x="1440" y="0" width="1080" height="1920" />
     </state>
-    <state x="1645" y="451" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/1440.0.1080.1920@1440.0.1080.1920" timestamp="1602593374467" />
+    <state x="1645" y="451" width="670" height="676" key="search.everywhere.popup/0.0.1440.900/1440.0.1080.1920@1440.0.1080.1920" timestamp="1602765314623" />
   </component>
 </project>

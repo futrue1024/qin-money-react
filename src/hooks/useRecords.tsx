@@ -2,7 +2,7 @@ import {useEffect, useState} from "react";
 import {useUpdate} from "./useUpdate";
 
 
-type RecordsItem = {
+export type RecordsItem = {
   tagIds: number[],
   note: string,
   category: "+" | "-",
@@ -18,7 +18,7 @@ const useRecords = () => {
   }, []);
   useUpdate(() => {
     window.localStorage.setItem("Records", JSON.stringify(records));
-  }, [records]);
+  }, records);
   const addRecord = (newRecord: newRecordsItem) => {
     if (newRecord.amount <= 0) {
       alert("金额不能为零");

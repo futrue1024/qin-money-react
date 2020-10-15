@@ -1,11 +1,12 @@
 import Layout from "../components/Layout";
 import React, {useState} from "react";
 import styled from "styled-components";
-import {TagsSection} from "components/money/TagsSection";
 import {NotesSection} from "components/money/NotesSection";
-import {TypeSection} from "components/money/TypeSection";
 import {NumberPadSection} from "../components/money/NumberPadSection";
 import {useRecords} from "../hooks/useRecords";
+import {TypeSection} from "../components/money/TypeSection";
+import {TagsSection} from "../components/money/TagsSection";
+
 
 
 type Category = "-" | "+"
