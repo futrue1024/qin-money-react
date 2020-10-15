@@ -24,9 +24,9 @@ const defaultFromData = {
 
 };
 const Money = () => {
-  const {records, addRecord} = useRecords();
+  const { addRecord} = useRecords();
   const [selected, setSelected] = useState(defaultFromData);
-  console.log(selected);
+
   const onChange = (obj: Partial<typeof selected>) => {
     setSelected({
       ...selected,
@@ -42,7 +42,6 @@ const Money = () => {
   };
   return (
     <MyLayout>
-      {JSON.stringify(records)}
       <TagsSection value={selected.tagIds} onChange={tagIds => onChange({tagIds})}/>
       <NotesSection value={selected.note} onChange={note => onChange({note})}/>
       <TypeSection value={selected.category} onChange={category => onChange({category})}/>

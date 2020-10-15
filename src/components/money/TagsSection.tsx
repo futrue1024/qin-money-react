@@ -1,16 +1,20 @@
 import styled from "styled-components";
 import React from "react";
 import {useTags} from "hooks/useTags";
+import Icon from "../Icon";
 
 
 const Wrapper = styled.section`
   background: #ffffff;
   flex-grow: 1;
+  flex-shrink: 1;
+  overflow: auto;
   padding: 12px 16px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   align-items: flex-start;
+  
+  
   >ul{
   margin: 0 -12px;
     >li{
@@ -19,13 +23,14 @@ const Wrapper = styled.section`
       padding: 3px 18px;
       display: inline-block;
       font-size: 14px;
-      margin: 4px 12px;
+      margin: 8px 12px;
       &.selected{
         background: #1DA161;
         color: white;
       }
     }
   }
+  >.add{
   >button{
     border: none;
     background: none;
@@ -34,6 +39,8 @@ const Wrapper = styled.section`
     margin-top: 8px;
     padding: 2px 4px;
   }
+  }
+  
 `;
 type Props = {
   value: number[]
@@ -61,7 +68,10 @@ const TagsSection: React.FC<Props> = (props) => {
             {tag.name}
           </li>)}
       </ul>
-      <button onClick={addTag}>新增表签</button>
+      <div className='add'>
+        <button onClick={addTag}><Icon name='新建1'/>新增标签</button>
+      </div>
+
     </Wrapper>
   );
 };
