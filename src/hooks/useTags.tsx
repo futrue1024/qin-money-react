@@ -32,6 +32,7 @@ const useTags = () => {
     return result;
 
   };
+
   const updateTag = (id: number, obj: { name: string }) => {
     setTags(tags.map(tag => tag.id === id ? {id, name: obj.name} : tag));
   };
@@ -54,6 +55,10 @@ const useTags = () => {
       alert("未输入标签名，标签名不能为空");
     }
   };
-  return {tags, setTags, addTag, findTag, updateTag, deleteTag, findTagIndex};
+  const findTagName = (id:number) => {
+     const tag = tags.filter(t => t.id === id)[0]
+    return tag.name
+  }
+  return {tags, setTags,findTagName, addTag, findTag, updateTag, deleteTag, findTagIndex};
 };
 export {useTags};

@@ -30,10 +30,10 @@ type Props = {
   value:'-' | '+'
   onChange: (value: "-" | "+") => void
 }
-const CategorySection: React.FC<Props> = (props) => {
-  const [categoryList] = useState<("-" | "+")[]>(["+", "-"]);
+const TypeSection: React.FC<Props> = (props) => {
+  const [categoryList] = useState<("-" | "+")[]>([ "-","+"]);
   const category = props.value
-  const categoryMap = {"+": "收入", "-": "支出"};
+  const categoryMap = { "-": "支出","+": "收入"};
   return (
     <Wrapper>
       <ul>
@@ -48,4 +48,4 @@ const CategorySection: React.FC<Props> = (props) => {
 
   );
 };
-export {CategorySection};
+export {TypeSection};

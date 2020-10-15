@@ -3,9 +3,9 @@ import React, {useState} from "react";
 import styled from "styled-components";
 import {TagsSection} from "components/money/TagsSection";
 import {NotesSection} from "components/money/NotesSection";
-import {CategorySection} from "components/money/categorySection";
+import {TypeSection} from "components/money/TypeSection";
 import {NumberPadSection} from "../components/money/NumberPadSection";
-import {useRecords} from "../icons/useRecords";
+import {useRecords} from "../hooks/useRecords";
 
 
 type Category = "-" | "+"
@@ -44,7 +44,7 @@ const Money = () => {
       {JSON.stringify(records)}
       <TagsSection value={selected.tagIds} onChange={tagIds => onChange({tagIds})}/>
       <NotesSection value={selected.note} onChange={note => onChange({note})}/>
-      <CategorySection value={selected.category} onChange={category => onChange({category})}/>
+      <TypeSection value={selected.category} onChange={category => onChange({category})}/>
       <NumberPadSection value={selected.amount} onChange={amount => onChange({amount})}
                         onOk={submit}/>
     </MyLayout>);

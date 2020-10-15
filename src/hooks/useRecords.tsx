@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {useUpdate} from "../hooks/useUpdate";
+import {useUpdate} from "./useUpdate";
 
 
 type RecordsItem = {

@@ -11,16 +11,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="986f50aa-c9ac-4f62-839e-8147ad5bfb7f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/icons/useRecords.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/money/NumberPadSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/money/NumberPadSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/money/NumberPadSection/computesOutput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/money/NumberPadSection/computesOutput.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/money/TagsSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/money/TagsSection.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/useTags.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useTags.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/useUpdate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useUpdate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/money/categorySection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/money/TypeSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useTags.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useTags.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/useRecords.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useRecords.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Money.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Money.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Tag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Tag.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Tags.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Tags.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Statistics.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Statistics.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,11 +52,11 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/hooks" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/icons" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/hooks" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -71,7 +69,8 @@
       <updated>1602567464472</updated>
       <workItem from="1602567465555" duration="719000" />
       <workItem from="1602577914456" duration="1975000" />
-      <workItem from="1602580151800" duration="60171000" />
+      <workItem from="1602580151800" duration="61592000" />
+      <workItem from="1602759064827" duration="1680000" />
     </task>
     <task id="LOCAL-00001" summary="update index.html">
       <created>1602577932808</created>
@@ -150,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602742387515</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="记账页面完成数据存入本地">
+      <created>1602755317296</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1602755317296</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +172,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -180,7 +187,8 @@
     <MESSAGE value="将tag:string 重构 为 tag:number" />
     <MESSAGE value="增加编辑页增删改查" />
     <MESSAGE value="Tags数据存入本地" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tags数据存入本地" />
+    <MESSAGE value="记账页面完成数据存入本地" />
+    <option name="LAST_COMMIT_MESSAGE" value="记账页面完成数据存入本地" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1614" y="657" key="#Inspections" timestamp="1602578338986">
@@ -195,10 +203,10 @@
       <screen x="1440" y="0" width="1080" height="1920" />
     </state>
     <state x="1718" y="714" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/1440.0.1080.1920@1440.0.1080.1920" timestamp="1602580735502" />
-    <state x="1587" y="487" key="CommitChangelistDialog2" timestamp="1602742387312">
+    <state x="1587" y="487" key="CommitChangelistDialog2" timestamp="1602755317137">
       <screen x="1440" y="0" width="1080" height="1920" />
     </state>
-    <state x="1587" y="487" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1080.1920@1440.0.1080.1920" timestamp="1602742387312" />
+    <state x="1587" y="487" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1080.1920@1440.0.1080.1920" timestamp="1602755317137" />
     <state x="1587" y="504" key="CommitChangelistDialog2/0.23.1440.816/1440.23.1080.1897@1440.23.1080.1897" timestamp="1602577932697" />
     <state x="1644" y="766" key="EditFileWatcherDialog" timestamp="1602579283352">
       <screen x="1440" y="23" width="1080" height="1897" />
