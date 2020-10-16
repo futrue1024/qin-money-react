@@ -14,12 +14,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="986f50aa-c9ac-4f62-839e-8147ad5bfb7f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/icons/新建.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/icons/新建1.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/deploy.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/money/TagsSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/money/TagsSection.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hooks/useTags.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useTags.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/Money.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Money.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Tag.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Tag.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +70,7 @@
       <workItem from="1602567465555" duration="719000" />
       <workItem from="1602577914456" duration="1975000" />
       <workItem from="1602580151800" duration="61592000" />
-      <workItem from="1602759064827" duration="7021000" />
+      <workItem from="1602759064827" duration="10864000" />
     </task>
     <task id="LOCAL-00001" summary="update index.html">
       <created>1602577932808</created>
@@ -171,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602765869220</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="滚动优化">
+      <created>1602768112400</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1602768112400</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,7 +211,8 @@
     <MESSAGE value="记账页面完成数据存入本地" />
     <MESSAGE value="统计基本样式，引入dayjs" />
     <MESSAGE value="消除警告" />
-    <option name="LAST_COMMIT_MESSAGE" value="消除警告" />
+    <MESSAGE value="滚动优化" />
+    <option name="LAST_COMMIT_MESSAGE" value="滚动优化" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1614" y="657" key="#Inspections" timestamp="1602578338986">
@@ -220,10 +227,10 @@
       <screen x="1440" y="0" width="1080" height="1920" />
     </state>
     <state x="1718" y="714" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900/1440.0.1080.1920@1440.0.1080.1920" timestamp="1602580735502" />
-    <state x="1587" y="487" key="CommitChangelistDialog2" timestamp="1602765869077">
+    <state x="1587" y="487" key="CommitChangelistDialog2" timestamp="1602768112270">
       <screen x="1440" y="0" width="1080" height="1920" />
     </state>
-    <state x="1587" y="487" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1080.1920@1440.0.1080.1920" timestamp="1602765869077" />
+    <state x="1587" y="487" key="CommitChangelistDialog2/0.0.1440.900/1440.0.1080.1920@1440.0.1080.1920" timestamp="1602768112270" />
     <state x="1587" y="504" key="CommitChangelistDialog2/0.23.1440.816/1440.23.1080.1897@1440.23.1080.1897" timestamp="1602577932697" />
     <state x="1644" y="766" key="EditFileWatcherDialog" timestamp="1602579283352">
       <screen x="1440" y="23" width="1080" height="1897" />

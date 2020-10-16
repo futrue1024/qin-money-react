@@ -34,6 +34,19 @@ const ButtonWrapper = styled.div`
   justify-content: center;
   align-items: center;
 `
+const NoTag = styled.div`
+  padding-top:80px;
+  text-align: center;
+  color: #999;
+  >.icon{
+  width: 40px;
+  height: 40px;
+   fill: #999;
+  }
+  >span{
+  font-size: 40px;
+  }
+`
 const Tag: React.FC = () => {
   const {findTag,updateTag,deleteTag} = useTags();
   let {id:idString} = useParams<Params>();
@@ -60,7 +73,10 @@ const Tag: React.FC = () => {
         <ButtonWrapper>
           <Button onClick={() => deleteTag(tag.id)}>删除标签</Button>
         </ButtonWrapper>
-      </div>:<div>tag不存在</div>}
+      </div>:<NoTag>
+        <Icon name='tags' className='icon'/>
+        <span>标签不存在</span>
+      </NoTag>}
     </Layout>
 
   );

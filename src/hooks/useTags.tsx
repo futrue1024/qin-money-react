@@ -13,7 +13,9 @@ const useTags = () => {
         {id: createId(), name: "房贷"},
         {id: createId(), name: "娱乐"},
         {id: createId(), name: "教育"},
-        {id: createId(), name: "宠物"}
+        {id: createId(), name: "宠物"},
+        {id: createId(), name: "工资"},
+        {id: createId(), name: "理财"}
 
       ]
     }
